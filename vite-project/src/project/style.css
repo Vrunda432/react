@@ -1,0 +1,43 @@
+.Header{
+    border: 1px solid black;
+    height: 50px;
+    width:400px;
+    background-color: aquamarine;
+    place-content: center;
+    display: grid;
+}
+.Navigation{
+    border: 1px solid black;
+    height: 50px;
+    width:400px;
+    background-color: pink;
+    place-content: center;
+    display: grid;
+}
+.Content{
+    border: 1px solid black;
+    height: 200px;
+    width:150px;
+    background-color:yellow;
+    display: grid;
+    place-content: center;
+    
+}
+.body{
+    border: 1px solid black;
+    height: 200px;
+    width:100px;
+    display: grid;
+    place-content: center;
+    background-color: aqua;
+    gap: 2px;
+}
+
+.Footer{
+    border: 1px solid black;
+    height: 50px;
+    width:400px;
+    background-color: red;
+    place-content: center;
+    display: grid;
+}
