@@ -1,0 +1,17 @@
+.chikan{
+    background-image: url(../../public/banner3.jpg);
+
+}
+.chikan h1{
+    color: azure;
+}
+.chikan p{
+    color: rgb(189, 16, 16);
+    font-size: 60px;
+}
+.chikantxt{
+    margin-left:40px;
+    padding-top: 60px;
+    padding-bottom: 110px;
+}
+
