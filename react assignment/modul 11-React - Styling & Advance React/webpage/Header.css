@@ -1,0 +1,28 @@
+.mainhead{
+    display: flex;
+    
+}
+.title{
+    flex:1;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    
+}
+.nav ul li a{
+    font-size: 20px;
+}
+.nav{
+    flex:2;
+    align-items: center;
+}
+.search{
+   flex:0.5;
+   padding-top: 5px;
+   
+}
+.search button{
+    height: 30px;
+   width:70px;
+}

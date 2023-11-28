@@ -1,0 +1,36 @@
+.maincard{
+    height: 600px;
+    width: 370px;
+}
+.cardimg img{
+    height: 150px;
+    width: 150px;
+    /* border-radius: 10px; */
+}
+.cardbody button{
+    background-color: chocolate;
+}
+.maincard .cardimg img{
+  height:300px;
+  width: 370px;
+  object-position:center ;
+}
+.cardtext{
+    padding: 15px 25px;
+    background-color: antiquewhite;
+}
+
+
+.cdate{
+    height: 30px;
+    width:90px;
+    background-color: rgb(152, 96, 26);
+    margin-bottom: 20px;
+    justify-content: baseline;
+}
+.comment{
+    display: flex;
+}
+.bye{
+    display: flex;
+}
