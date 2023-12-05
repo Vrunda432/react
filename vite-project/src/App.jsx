@@ -1,3 +1,5 @@
+import { ToastContainer } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css';
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
@@ -11,6 +13,15 @@ import UseEffectMatch from './hook-usestate/UseEffectMatch'
 import SingleInput from './8.input/SingleInput'
 import FormInput from './8.input/FormInput'
 import WebMain from './webpage/WebMain'
+import SingleInputRev from './8.input/SingleInputRev'
+import MultipleInput from './8.input/MultipleInput'
+import Example from './8.input/MultipleInput'
+import MultiInput from './8.input/MultiInput'
+import AllMulti from './8.input/AllMulti'
+import CityStatePincode from './8.input/CityStatePincode'
+import Use from './8.input/Use';
+import Delete from './8.input/Delete';
+import MultiUpdate from './8.input/MultiUpdate';
 
 
 
@@ -20,8 +31,8 @@ function App() {
   return (
 
     <>
-    
-     {/* <PropsChange name="hello"/>
+    <div>
+      {/* <PropsChange name="hello"/>
      <LifeCycleMethod/>
      <StateHook/> */}
      {/* <UseEffect/> */}
@@ -29,8 +40,21 @@ function App() {
      {/* <UseEffectMatch/> */}
      {/* <SingleInput/> */}
      {/* <FormInput/> */}
-      <WebMain/>  
+      {/* <WebMain/>   */}
   {/* <Amount/> */}
+  {/* <SingleInputRev/> */}
+  {/* <MultipleInput/> */}
+  {/* <Example/> */}
+  {/* <MultiInput/> */}
+  {/* <AllMulti/> */}
+  {/* <CityStatePincode/> */}
+  {/* <Use/> */}
+  {/* <Delete/> */}
+  <MultiUpdate/>
+    </div>
+     
+  <ToastContainer />
+  
     </>
     
   )
