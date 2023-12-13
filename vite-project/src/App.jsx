@@ -22,6 +22,16 @@ import CityStatePincode from './8.input/CityStatePincode'
 import Use from './8.input/Use';
 import Delete from './8.input/Delete';
 import MultiUpdate from './8.input/MultiUpdate';
+import LocalStorage from './9.localstorage/LocalStorage';
+import UseLocalStorage from './9.localstorage/UseLocalStorage';
+import ExLocalStorage from './9.localstorage/ExLocalStorage';
+import InputPractice from './9.localstorage/InputPractice';
+import CrudPratice from './9.localstorage/CrudPratice';
+import CurdTest from './9.localstorage/CurdTest';
+import UseRefCom from './10.useRef/UseRefCom';
+import UseContaxtCom from './hook-usestate/usecontaxt/UseContaxtCom';
+import TestCd from './9.localstorage/TestCd';
+import LocalStorageRev from './9.localstorage/LocalStorageRev';
 
 
 
@@ -50,7 +60,18 @@ function App() {
   {/* <CityStatePincode/> */}
   {/* <Use/> */}
   {/* <Delete/> */}
-  <MultiUpdate/>
+  {/* <MultiUpdate/> */}
+  {/* <LocalStorage/> */}
+  {/* <UseLocalStorage/> */}
+  {/* <ExLocalStorage/> */}
+  {/* <Prectice/> */}
+    {/* <InputPractice/>/ */}
+    {/* <CrudPratice/> */}
+    {/* <CurdTest/> */}
+    {/* <UseRefCom/> */}
+    {/* <UseContaxtCom/> */}
+    <TestCd/>
+    {/* <LocalStorageRev/> */}
     </div>
      
   <ToastContainer />

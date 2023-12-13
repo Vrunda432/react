@@ -85,7 +85,7 @@ return (
         <tbody>
           {
            alldata.map((e,i)=>{
-            return <tr key={i+1}>
+            return( <tr key={i+1}>
             <th scope="row">1</th>
             <td>{e.email}</td>
             {e.password.length <5?(
@@ -95,7 +95,7 @@ return (
             <Button className='ms-3' onClick={()=>editdata(e,i)}>Edit</Button>
             </td>
             
-          </tr>
+          </tr>)
             
            })
           }
