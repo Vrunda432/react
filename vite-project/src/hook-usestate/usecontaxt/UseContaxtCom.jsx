@@ -1,29 +1,28 @@
-import React, {createContext, useState } from 'react'
-import ComA from './ComA'
-import ComB from './ComB'
-import ComB2 from './ComB2'
-// import { useCol } from 'react-bootstrap/esm/Col'
-export const NameContaxt=createContext();
+import React, { createContext, useState } from 'react'
+import ComA from './ComA';
+import ComB from './ComB';
 
+export const ValueChange=createContext();
+export const CityContext=createContext();
 export default function UseContaxtCom() {
-    const[name,setName]=useState("vrunda patel");
-
-  return (
-    <>
-    <NameContaxt.Provider value={name}>
-
-    <ComB name={name}/>
-    </NameContaxt.Provider>
-    <ComA/>
+const [name,SetName] =useState("vrunda patel");
+//const [age,SetAge]=useState(28);
+const [city,setCity]=useState("surat");
    
-    <button></button>
+  return (
+    <div>
+      
+      <ValueChange.Provider value={name}>
+   <ComA/>
+   <CityContext.Provider value={city}>
+      
+     <ComB/>
+   </CityContext.Provider>
+ 
+      </ValueChange.Provider>
+      
+      
     
-    </>
+      UseContaxtCom</div>
   )
 }
-
-// name="vrunda"
-// useContaxt-comA
-//           -ComB
-//               -ComB2
-//               -ComB3

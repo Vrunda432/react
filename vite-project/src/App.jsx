@@ -32,6 +32,7 @@ import UseRefCom from './10.useRef/UseRefCom';
 import UseContaxtCom from './hook-usestate/usecontaxt/UseContaxtCom';
 import TestCd from './9.localstorage/TestCd';
 import LocalStorageRev from './9.localstorage/LocalStorageRev';
+import UseReducerCom from './hook-usestate/useReducer/UseReducerCom';
 
 
 
@@ -70,8 +71,9 @@ function App() {
     {/* <CurdTest/> */}
     {/* <UseRefCom/> */}
     {/* <UseContaxtCom/> */}
-    <TestCd/>
+    {/* <TestCd/> */}
     {/* <LocalStorageRev/> */}
+    <UseReducerCom/>
     </div>
      
   <ToastContainer />
