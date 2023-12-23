@@ -1,27 +1,34 @@
-import React, { useReducer, useState } from 'react'
-import { Button } from 'reactstrap';
+import React, { useReducer } from 'react'
+import { Button } from 'reactstrap'
+
+
 
 export default function UseReducerCom() {
-    //let[count,setCount]=useState(0);
 
-    const reducer=(state,Action)=>{
-     if(Action === "Inc"){
-        return state+1;
-     }
-      else if(Action === "Dec"){
-        return state-1;
-      }
-      else {
-        return state;      }
+
+  const reducer=(state,action)=>{
+    if(action === "inc"){
+     
+      
+       return {count:state.count+1}
+    }   else if(action==="dec"){
+      return {count:state.count-1}
+    }else{
+      return{count:state.count}
     }
-    let [count,Dispatch]=useReducer( reducer,1000)
+    
+  }
+  const [number,dispach]=useReducer(reducer,{count:100})
   return (
     <div>
-        <h1>Count is{count}</h1>
-        <Button onClick={()=>Dispatch("Inc")}>Inc</Button>
-        <Button onClick={()=>Dispatch("Dec")}>Dec</Button>
-        <Button onClick={()=>Dispatch("Dec-4")}>Dec</Button>
-        
-       </div>
+      
+      
+      <h1>count: {number.count}</h1>
+      
+      <Button onClick={()=>dispach("inc")}>Inc</Button>
+      <Button onClick={()=> dispach("dec")}>Dec</Button>
+      
+      
+      </div>
   )
 }

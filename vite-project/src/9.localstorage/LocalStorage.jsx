@@ -6,6 +6,9 @@ import { useEffect, useState } from "react";
 export default function LocalStorage() {
   const [user, setUser] = useState("");
   const [alldata, setAlldata] = useState([]);
+  
+  
+  
   const getdata = () => {
     if (user.length > 0) {
       setAlldata([...alldata, user]);
@@ -19,6 +22,8 @@ export default function LocalStorage() {
     const normal = JSON.parse(jsondata);
     setAlldata(normal || []);
   }, []);
+  
+  
   const datadelete = (ele) => {
     const afterdelete = alldata.filter((e, i) => {
       return i !== ele;

@@ -10,11 +10,12 @@ export default function ExLocalStorage() {
        password:"", 
     }
    );
+   
    const[alldata,Setalldata]=useState([])
 
-  const [index,Setindex]=useState(null)
+   const [index,Setindex]=useState(null)
  
-  const getdata=((e)=>{
+    const getdata=((e)=>{
     if(data.email.length>0 ){
     Setalldata([...alldata,data]);
     localStorage.setItem("setitems",JSON.stringify([...alldata,data]));
@@ -37,15 +38,15 @@ export default function ExLocalStorage() {
   
 
   const deletedata=(ele)=>{
- const afterdelete=alldata.filter((e,i)=>{
+  const afterdelete=alldata.filter((e,i)=>{
     return i!== ele
     
  })
- localStorage.setItem("setitems",JSON.stringify(afterdelete));
- Setalldata(afterdelete);
+   localStorage.setItem("setitems",JSON.stringify(afterdelete));
+   Setalldata(afterdelete);
   }
 
-  const Editdata=(ele,i)=>{
+    const Editdata=(ele,i)=>{
     Setdata(ele)
     Setindex(i)
   }
@@ -110,7 +111,7 @@ export default function ExLocalStorage() {
 </Form>
     
 
-<Table
+<Table className=' w-50 mt-5 m-auto '
 >
   <thead>
     <tr>
@@ -124,13 +125,13 @@ export default function ExLocalStorage() {
         password
       </th>
       <th>
-   action
+        action
       </th>
     </tr>
   </thead>
   <tbody>
     {
-        alldata.map((e,i)=>{
+        alldata?.map((e,i)=>{
             return (
                 <tr>
       <th scope="row">

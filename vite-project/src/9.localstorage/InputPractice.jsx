@@ -17,7 +17,12 @@ export default function InputPractice() {
     email: "",
     password: "",
   });
+  
+  
   let [alldata, setAlldata] = useState([]);
+
+
+
   let [updateindex, setUpdateindex] = useState(null);
 
   const adddata = () => {
@@ -39,17 +44,25 @@ export default function InputPractice() {
       toast.error("Please fill the form");
     }
   };
+  
+  
+  
   const deletedata = (index) => {
     const afterdelete = alldata.filter((e, i) => {
       return i !== index;
     });
     setAlldata(afterdelete);
   };
+ 
+ 
+ 
   const Editdata = (datas, dataindex) => {
     setData(datas);
     setUpdateindex(dataindex);
   };
 
+ 
+ 
   const updatedata = () => {
     if (updateindex || updateindex == 0) alldata.splice(updateindex, 1, data);
     setData([...alldata]);

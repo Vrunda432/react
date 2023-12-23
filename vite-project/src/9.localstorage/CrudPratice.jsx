@@ -27,20 +27,29 @@ export default function CrudPratice() {
        const normaldat=JSON.parse(josndata)    
        setAlldata(normaldat)  
      },[])
-   const  deletedata=(index)=>{
+     
+     
+     
+     
+     const  deletedata=(index)=>{
+      
     const afterdelete=  alldata.filter((e,i)=>{
      return i !==index
     })
     localStorage.setItem("jsonkey",JSON.stringify(afterdelete))
-    setAlldata(afterdelete)
+    setAlldata(afterdelete);
 
    }
 
+   
+   
    const editdata=(data,upindex)=>{
-    setUser(data)
-    Setindex(upindex)
+    setUser(data);
+    Setindex(upindex);
    }
 
+   
+   
    const updatedata=()=>{
     if(index || index==0){
      alldata.splice(index,1,user)
@@ -55,8 +64,8 @@ export default function CrudPratice() {
   return (
     <div>
        <Form className='w-50 mt-5 m-auto'>
-  <FormGroup>
-    <Label for="exampleEmail">
+     <FormGroup>
+      <Label for="exampleEmail">
       Email
     </Label>
     <Input

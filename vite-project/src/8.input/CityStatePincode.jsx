@@ -9,7 +9,14 @@ export default function CityStatePincode() {
     pincode:"",
     
   })
+ 
+ 
+ 
   const[Alldata,setData]=useState([])
+ 
+ 
+ 
+ 
   const getdata=()=>{
     if(data.city.length>0){
       setData([...Alldata,data])

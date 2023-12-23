@@ -8,9 +8,14 @@ export default function AllMulti() {
      password:"",
     }
     );
+    
+    
     const[AllData,setAlldata]=useState([])
 
-   const adddata=()=>{
+   
+   
+   
+    const adddata=()=>{
     if(indata.email.length  >0 ){
     data([...AllData,setAlldata])
     SetData({
@@ -18,7 +23,10 @@ export default function AllMulti() {
         password:"",
     })
     }}
-  return (
+  
+  
+  
+    return (
     <div>
         <h1>{data.email}</h1>
     <Form>
