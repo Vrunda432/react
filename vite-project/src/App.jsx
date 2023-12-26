@@ -39,6 +39,7 @@ import CrudPratice from './9.localstorage/CrudPratice';
 // import Profile from './11.Router/User/Profile';
 // // import Contact from './11.Router/Contact';
 import Routing from './Routing/Routing';
+import ProtecteRout from './Routing/ProtectRouter/ProtecteRout';
 //import UseReducerCom from './hook-usestate/useReducer/UseReducerCom';
 //import ReducerWithPayload from './hook-usestate/useReducer/ReducerWithPayload';
 //import Router from './11.Router/11.Roter/RouterCom';
@@ -98,7 +99,8 @@ function App() {
     {/* <Home/> */}
     {/* <Profile/> */}
     {/* <Contact/> */}
-    <Routing/>
+    {/* <Routing/> */}
+    <ProtecteRout/>
     </div>
      
   {/* <ToastContainer /> */}

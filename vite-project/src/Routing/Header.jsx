@@ -11,6 +11,7 @@ export default function Header() {
           <li> <NavLink to={"/service"}> Service</NavLink> </li>
           <li> <NavLink to={"/param"}> Param</NavLink> </li>
           <li> <NavLink to={"/usertask"}> task</NavLink> </li>
+          <li><NavLink to ={"/serachparam"}>Serachparam</NavLink></li>
         </ul>
        </div>
 

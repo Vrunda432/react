@@ -18,6 +18,7 @@ import UserTask from "./UserTask";
 import ShowName from "./ShowName";
 import ShowAge from "./ShowAge";
 import ShowCity from "./ShowCity";
+import Serachparam from "./SerachParam/Serachparam";
 
 export default function Routing() {
   return (
@@ -50,6 +51,8 @@ export default function Routing() {
           <Route path="/showname/:name" Component={ShowName}/>
           <Route path="/showage/:age" Component={ShowAge}/>
           <Route path="/showcity/:city" Component={ShowCity}/>
+          <Route path="/serachparam" Component={Serachparam}/>
+
 
         </Routes>
       </BrowserRouter>
