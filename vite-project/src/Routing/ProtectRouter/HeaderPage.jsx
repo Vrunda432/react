@@ -4,8 +4,21 @@ import { NavLink } from 'react-router-dom'
 import { Button } from 'reactstrap'
 
 export default function HeaderPage() {
+   const userlogin=()=>{
+    localStorage.setItem("userdata",
+    //for admin
+    //JSON.stringify({userdata:true,usertype:"admin"})
+   // )
+
+    // for normall user
+    JSON.stringify({userdata:true,usertype:"user"})
+    )
+   };
+   const userlogout=()=>{
+    localStorage.removeItem("userdata")
+   }
   return (
-    <div>
+    <div >
       
       
  <ul>
@@ -21,22 +34,28 @@ export default function HeaderPage() {
   </li>
   <li> 
 
-    <NavLink to={"/About"}>About</NavLink>
 
+    <NavLink to={"/about"}>About</NavLink>
   </li>
   <li> 
 
-    <NavLink to={"/Service"}>Service</NavLink>
+
+    <NavLink to={"/admin"}>Admin</NavLink>
+  </li>
+  <li> 
+
+    <NavLink to={"/Profile"}>Profile</NavLink>
 
   </li>
  </ul>
+
+
  <div>
 
-  <Button>
-    Login
-  </Button>
+  <Button className='btn-danger ms-3'onClick={userlogin} >
+     Login</Button>
 
-  <Button>LogOut</Button>
+  <Button className='btn-danger ms-5' onClick={userlogout}>Logout</Button>
  </div>
       
       </div>
